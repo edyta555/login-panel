@@ -7,18 +7,16 @@ const LoginPanel = () => {
   return (
     <Card customStyles={styles.container}>
       <form>
-        <div className={styles.singleField}>
-          <label htmlFor="email">E-Mail adress</label>
+        <div className={styles["single-field"]}>
+          <label htmlFor="email">E-Mail adress:</label>
           <input type="email" id="email" />
         </div>
-        <div className={styles.singleField}>
-          <label htmlFor="password">Password</label>
+        <div className={styles["single-field"]}>
+          <label htmlFor="password">Password:</label>
           <input type="password" id="password" />
         </div>
-        <div className={styles.buttonContainer}>
-          <Button type="submit" className={styles.button}>
-            Login
-          </Button>
+        <div className={styles["button-container"]}>
+          <Button type="submit">Login</Button>
         </div>
       </form>
     </Card>
