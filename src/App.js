@@ -6,7 +6,7 @@ import LoginPanel from "./components/login-panel/LoginPanel";
 import styles from "./app.module.scss";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const logInHandler = (email, password) => {
     setIsLoggedIn(true);

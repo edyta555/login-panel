@@ -1,29 +1,22 @@
-.container {
-  width: 90%;
-  max-width: 50rem;
-  margin: 10rem auto 2rem;
-  padding: 2rem;
+.single-field {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
-  .single-field {
-    margin: 1rem 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    label {
-      flex-basis: 20%;
-      min-width: 120px;
-    }
-
-    input {
-      flex-basis: 80%;
-      padding: 0.5rem;
-      border-radius: 5px;
-      border: 1px solid rgba(204, 204, 204, 0.912);
-    }
+  label {
+    flex-basis: 20%;
+    min-width: 120px;
   }
 
-  .button-container {
-    text-align: center;
+  input {
+    flex-basis: 80%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 204, 204, 0.912);
   }
+}
+
+.button-container {
+  text-align: center;
 }

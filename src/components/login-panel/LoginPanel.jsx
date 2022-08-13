@@ -5,7 +5,7 @@ import styles from "./login-panel.module.scss";
 
 const LoginPanel = () => {
   return (
-    <Card customStyles={styles.container}>
+    <Card>
       <form>
         <div className={styles["single-field"]}>
           <label htmlFor="email">E-Mail adress:</label>
