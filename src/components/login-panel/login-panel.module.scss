@@ -3,10 +3,17 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 
   label {
     flex-basis: 20%;
     min-width: 120px;
+    @media only screen and (max-width: 600px) {
+      flex-basis: 100%;
+      min-width: none;
+    }
   }
 
   input {
@@ -14,6 +21,21 @@
     padding: 0.5rem;
     border-radius: 5px;
     border: 1px solid rgba(204, 204, 204, 0.912);
+    @media only screen and (max-width: 600px) {
+      flex-basis: 100%;
+      width: 100%;
+    }
+
+    &:focus {
+      border-color: #032c55;
+      background: #f0f4f9;
+      outline: none;
+    }
+  }
+
+  &.incorect-value input {
+    background: #f2e6e6;
+    border-color: #ff0000;
   }
 }
 

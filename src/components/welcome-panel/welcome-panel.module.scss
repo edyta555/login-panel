@@ -4,5 +4,8 @@
 
   h2 {
     font-size: 30px;
+    @media only screen and (max-width: 600px) {
+      font-size: 26px;
+    }
   }
 }

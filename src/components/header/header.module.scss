@@ -13,10 +13,16 @@ $blue: #1e90ff;
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem 0 5rem;
+  @media only screen and (max-width: 600px) {
+    padding: 0 1rem;
+  }
 
   h3 {
     color: $white;
     font-size: 26px;
+    @media only screen and (max-width: 600px) {
+      font-size: 18px;
+    }
   }
 
   .navigation ul {

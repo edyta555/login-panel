@@ -1,4 +1,6 @@
 $blue: #1e90ff;
+$grey: #9fa6aade;
+$dark-blue: #0e71d4;
 
 .button {
   border: 1px solid $blue;
@@ -8,4 +10,16 @@ $blue: #1e90ff;
   cursor: pointer;
   font-size: 1.2rem;
   border-radius: 30px;
+
+  &:focus,
+  &:hover {
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $grey;
+    border-color: $grey;
+  }
 }

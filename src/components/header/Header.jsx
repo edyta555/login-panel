@@ -13,7 +13,7 @@ const Header = ({ isLoggedIn, onLogOut }) => {
               <a href="/">Profile</a>
             </li>
             <li>
-              <button onClick={onLogOut}>Log Out</button>
+              <button onClick={onLogOut}>Log out</button>
             </li>
           </ul>
         )}
