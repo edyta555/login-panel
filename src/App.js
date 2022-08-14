@@ -6,7 +6,7 @@ import LoginPanel from "./components/login-panel/LoginPanel";
 import styles from "./app.module.scss";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const logInHandler = (email, password) => {
     setIsLoggedIn(true);
@@ -15,10 +15,11 @@ function App() {
   const logOutHandler = (email, password) => {
     setIsLoggedIn(false);
   };
+
   return (
     <div className={styles.app}>
       <Header isLoggedIn={isLoggedIn} onLogOut={logOutHandler} />
-      {isLoggedIn ? <WelcomePanel /> : <LoginPanel />}
+      {isLoggedIn ? <WelcomePanel /> : <LoginPanel onLogIn={logInHandler} />}
     </div>
   );
 }
